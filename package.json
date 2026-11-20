@@ -1,0 +1,20 @@
+{
+  "name": "deploydev",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Deploydev — Operator-run cloud deployment platform",
+  "scripts": {
+    "dev": "pnpm --parallel dev",
+    "dev:frontend": "pnpm --filter frontend dev",
+    "dev:backend": "pnpm --filter backend dev",
+    "build": "pnpm --recursive build",
+    "build:frontend": "pnpm --filter frontend build",
+    "build:backend": "pnpm --filter backend build",
+    "typecheck": "pnpm --recursive typecheck",
+    "test": "pnpm --recursive test"
+  },
+  "packageManager": "pnpm@11.26.0",
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
